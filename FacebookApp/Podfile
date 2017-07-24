@@ -9,4 +9,7 @@ target 'FacebookApp' do
   pod 'Masonry'
   pod 'AFNetworking'
   pod 'SDWebImage'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKShareKit'
+  pod 'FBSDKLoginKit'
 end

@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 @protocol UserControllerDelegate<NSObject>
--(void) showAlbum;
+-(void) showUserAlbums;
 @end
 @interface UserViewController : UIViewController
-
+@property(nonatomic) id<UserControllerDelegate> delegate;
 @end

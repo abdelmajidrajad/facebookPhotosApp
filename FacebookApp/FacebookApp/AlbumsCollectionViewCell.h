@@ -13,5 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *albumTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *photosCount;
 @property (weak, nonatomic) IBOutlet UIImageView *selectedSignature;
+-(void) selectedState;
+-(void)deselectState;
 -(void) bindView:(Album *)album;
 @end

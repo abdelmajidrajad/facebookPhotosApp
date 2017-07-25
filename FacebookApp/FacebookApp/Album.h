@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Picture.h"
 @interface Album : NSObject
-@property (nonatomic) NSString* title;
+@property (nonatomic) double album_id;
 @property (nonatomic) NSInteger photosCount;
-@property (nonatomic) NSString* image;
--(instancetype) initWithTitle:(NSString *) title photos:(NSInteger) number image:(NSString*)image;
+@property (nonatomic) NSString* name;
+@property (nonatomic) Picture *picture;
+-(instancetype) initWithDictionary:(NSDictionary *)dictionary;
 @end

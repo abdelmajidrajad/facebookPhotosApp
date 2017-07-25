@@ -8,7 +8,8 @@
 
 #import "UserCoordinator.h"
 #import "UserViewController.h"
-@interface UserCoordinator()
+#import "AlbumViewController.h"
+@interface UserCoordinator()<UserControllerDelegate>
 @property(nonatomic,weak) UINavigationController *navigationViewController;
 @end
 @implementation UserCoordinator
@@ -21,6 +22,11 @@
 }
 -(void)start{
     UserViewController *userViewController =[UserViewController new];
+    userViewController.delegate = self;
     [_navigationViewController pushViewController:userViewController animated:YES];
+}
+-(void)showUserAlbums{
+    AlbumViewController *albumViewController = [AlbumViewController new];
+    [_navigationViewController pushViewController:albumViewController animated:YES];
 }
 @end

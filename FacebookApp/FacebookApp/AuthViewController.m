@@ -56,10 +56,12 @@
 -(void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error{
     if (error!=nil) {
         NSLog(@"Error ! %@",error);
+        [self disconnectedStatus];
     }
-    NSLog(@"Login with %@",[FBSDKAccessToken currentAccessToken].appID);
+    [self connectedStatus];
 }
 -(void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton{
+    [self disconnectedStatus];
     NSLog(@"Log Out!");
 }
 #pragma -mark getters

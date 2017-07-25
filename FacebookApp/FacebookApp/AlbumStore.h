@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface AlbumStore : NSObject
--(NSArray *) fetchAlbum;
+-(void) fetchAlbum:(void(^)(NSMutableArray *)) completion;
 @end

@@ -6,14 +6,11 @@
 //  Copyright © 2017 Hidden Founders. All rights reserved.
 //
 #define MAS_SHORTHAND
-
 #define WIDTH @50
 #define HEIGHT @50
 #define OFFSET 10
-
 #define WIDTH_LABEL @100
 #define HEIGHT_LABEL @30
-
 #define OFFSET_TOP 100
 #import "UserViewController.h"
 #import <FBSDKCoreKit.h>
@@ -34,6 +31,8 @@
     [super viewDidLoad];
     [self setupViewConstraints];
     [self synchronizeData];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+
 }
 -(void)viewWillAppear:(BOOL)animated{
     self.view.backgroundColor = [UIColor whiteColor];
@@ -103,10 +102,6 @@
         _nameLabel.textAlignment = NSTextAlignmentCenter;
         _nameLabel.font =[UIFont systemFontOfSize:13 weight:UIFontWeightThin];
         [_container  addSubview:_nameLabel];
-
-
-
-        
     }
     return _nameLabel;
 }
@@ -121,11 +116,6 @@
 }
 -(UIView *)container{
     if (!_container) {
-
-
-
-
-
         _container = [UIView new];
         _container.backgroundColor = [UIColor tealBlueTint];
         [LayoutHelper addShadow:_container];
@@ -133,11 +123,15 @@
     }
     return _container;
 }
+-(void) tapAlbumButton{
+    [self.delegate showUserAlbums];
+}
 -(UIButton *)albumButton{
     if (!_albumButton) {
         _albumButton = [UIButton new];
         [_albumButton setTitle:@"My Album" forState:UIControlStateNormal];
         _albumButton.backgroundColor = [UIColor blueTint];
+        [_albumButton addTarget:self action:@selector(tapAlbumButton) forControlEvents:UIControlEventTouchUpInside];
         [LayoutHelper addShadow:_albumButton];
         [self.view addSubview:_albumButton];
     }

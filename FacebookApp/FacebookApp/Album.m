@@ -11,11 +11,12 @@
 
 @end
 @implementation Album
--(instancetype)initWithTitle:(NSString *)title photos:(NSInteger)number image:(NSString *)image{
+-(instancetype) initWithDictionary:(NSDictionary *)dictionary{
     if(!self) return nil;
-    _title = title;
-    _photosCount = number;
-    _image = image;
+    self.name = dictionary[@"name"];
+    self.photosCount = [dictionary[@"photo_count"] integerValue];
+    self.album_id = [dictionary[@"id"] integerValue];
+    self.picture = dictionary[@"picture"];
     return self;
 }
 @end

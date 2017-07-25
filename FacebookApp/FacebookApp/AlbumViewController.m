@@ -29,26 +29,20 @@ static NSString * reuseIdentifier = @"albumCellIdentifier";
     [self registerCell];
     _albumCollectionView.delegate = self;
     _albumCollectionView.dataSource = self;
-
-
-
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
-
 -(void) setupConstraint{
     [self.albumCollectionView makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
 }
-
 -(void) fetshData{
     AlbumStore *store = [AlbumStore new];
-    _albums = [store fetchAlbum];
-    [_albumCollectionView reloadData];
-}
--(void) reloadAlbum:(NSArray *)data{
-    _albums = data;
-    [_albumCollectionView reloadData];
-}
+     [store fetchAlbum:^(NSArray *albums){
+         _albums = albums;
+         [_albumCollectionView reloadData];
+    }];
+    }
 #pragma -mark datasource methods
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return [_albums count];
@@ -59,7 +53,6 @@ static NSString * reuseIdentifier = @"albumCellIdentifier";
         Album *album = [_albums objectAtIndex:indexPath.row];
         [cell bindView:album];
     }
-
     return cell;
 }
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
@@ -75,14 +68,13 @@ static NSString * reuseIdentifier = @"albumCellIdentifier";
 
 #pragma -mark delegate methods
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-//    AlbumsCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-//    [cell selectedSignature];
-
+    AlbumsCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    [cell selectedState];
 }
 -(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
     // deselection
     AlbumsCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    [cell selectedSignature];
+    [cell deselectState];
 }
 -(BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     return YES;
@@ -104,12 +96,6 @@ static NSString * reuseIdentifier = @"albumCellIdentifier";
     [_albumCollectionView registerNib:cellNib forCellWithReuseIdentifier:reuseIdentifier];
 }
 #pragma -mark getters
--(NSArray *)albums{
-    if (!_albums) {
-        _albums = [NSArray new];
-    }
-    return _albums;
-}
 -(UICollectionView *)albumCollectionView{
     if (!_albumCollectionView) {
         UICollectionViewFlowLayout *flowLayout =[self createLayoutFlow];

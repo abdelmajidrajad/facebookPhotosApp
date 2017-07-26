@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@class Album;
 @interface AlbumStore : NSObject
--(void) fetchAlbum:(void(^)(NSArray *)) completion;
+-(void) fetchAlbum:(void(^)(NSArray *)) completion ;
+-(void) fetchPhotos:(NSString *)album_id completion:(void(^)(Album *)) completion;
 @end

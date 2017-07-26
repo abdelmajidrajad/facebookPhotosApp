@@ -32,15 +32,12 @@
     [self setupViewConstraints];
     [self synchronizeData];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
-
-}
--(void)viewWillAppear:(BOOL)animated{
     self.view.backgroundColor = [UIColor whiteColor];
 }
 -(void) synchronizeData{
         FBSDKGraphRequest *request = [[FBSDKGraphRequest alloc]
                                       initWithGraphPath:@"me"
-                                      parameters:@{@"fields":@"id,name,email,picture"}
+                            parameters:@{@"fields":@"id,name,email,picture"}
                                       HTTPMethod:@"GET"];
         [request startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection,
                                               NSDictionary *result,

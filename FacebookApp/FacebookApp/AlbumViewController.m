@@ -12,6 +12,8 @@
 #import "AlbumStore.h"
 #import "AlbumsCollectionViewCell.h"
 #import "Album.h"
+#import <FBSDKGraphRequest.h>
+#import "PhotosViewController.h"
 @interface AlbumViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property(nonatomic) NSArray *albums;
 @property(nonatomic) UICollectionView *albumCollectionView;
@@ -23,14 +25,23 @@ static NSString * reuseIdentifier = @"albumCellIdentifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.view.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1];
      [self setupConstraint];
     [self registerCell];
     _albumCollectionView.delegate = self;
     _albumCollectionView.dataSource = self;
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
     [self fetshData];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"ic_filter_48pt"] style:UIBarButtonItemStylePlain target:self action:@selector(sortByName)];
+
+}
+
+-(void) sortByName{
+    NSArray *sortedArray = [_albums sortedArrayUsingComparator:^NSComparisonResult(Album * album, Album * album1) {
+        return [album.name compare:album1.name];
+    }];
+    _albums = sortedArray;
+    [self.albumCollectionView reloadData];
 }
 -(void) setupConstraint{
     [self.albumCollectionView makeConstraints:^(MASConstraintMaker *make) {
@@ -50,10 +61,10 @@ static NSString * reuseIdentifier = @"albumCellIdentifier";
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     AlbumsCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    if (cell) {
+
         Album *album = [_albums objectAtIndex:indexPath.row];
         [cell bindView:album];
-    }
+
     return cell;
 }
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
@@ -71,9 +82,10 @@ static NSString * reuseIdentifier = @"albumCellIdentifier";
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     AlbumsCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     [cell selectedState];
-}
+     Album *album = [_albums objectAtIndex:indexPath.row];
+    [self.delegate didTapAnAlbum:album];
+    }
 -(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
-    // deselection
     AlbumsCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     [cell deselectState];
 }
@@ -83,9 +95,6 @@ static NSString * reuseIdentifier = @"albumCellIdentifier";
 -(BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath{
     return YES;
 }
-//- (UIEdgeInsets)collectionView:(UICollectionView*)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-//    return UIEdgeInsetsMake(1, 1, 1, 1);
-//}
 #pragma private methods - setup collectionView
 - (UICollectionViewFlowLayout *)createLayoutFlow {
     UICollectionViewFlowLayout * layout = [[UICollectionViewFlowLayout alloc] init];
@@ -104,7 +113,7 @@ static NSString * reuseIdentifier = @"albumCellIdentifier";
     if (!_albumCollectionView) {
         UICollectionViewFlowLayout *flowLayout =[self createLayoutFlow];
         _albumCollectionView = [[UICollectionView alloc] initWithFrame:self.view.frame collectionViewLayout:flowLayout];
-        _albumCollectionView.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1];
+        _albumCollectionView.backgroundColor = [UIColor whiteColor];
         _albumCollectionView.showsHorizontalScrollIndicator  = NO;
         [self.view addSubview:_albumCollectionView];
 

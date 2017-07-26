@@ -18,6 +18,7 @@
 @end
 @implementation AuthCoordinator
 -(instancetype) initWithNavigationController:(UINavigationController*) navigationController{
+    self = [super init];
     if (!self) return nil;
     self.navigationConroller = navigationController;
     return self;

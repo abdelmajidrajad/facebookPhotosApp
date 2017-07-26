@@ -9,15 +9,15 @@
 #import "UserCoordinator.h"
 #import "UserViewController.h"
 #import "AlbumViewController.h"
+#import "AlbumCoordinator.h"
 @interface UserCoordinator()<UserControllerDelegate>
 @property(nonatomic,weak) UINavigationController *navigationViewController;
 @end
 @implementation UserCoordinator
 -(instancetype)initWithNavigationController:(UINavigationController *)navigationController{
+    self = [super init];
     if(!self) return nil;
-    
     _navigationViewController = navigationController;
-
     return self;
 }
 -(void)start{
@@ -26,7 +26,7 @@
     [_navigationViewController pushViewController:userViewController animated:YES];
 }
 -(void)showUserAlbums{
-    AlbumViewController *albumViewController = [AlbumViewController new];
-    [_navigationViewController pushViewController:albumViewController animated:YES];
+    id<Coordinator> albumCoordinator = [[AlbumCoordinator alloc] initWithNavigationController:_navigationViewController];
+    [albumCoordinator start];
 }
 @end

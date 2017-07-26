@@ -22,6 +22,7 @@
         managerInstance = [NetworkManager new];
         managerInstance.configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
         managerInstance.manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:managerInstance.configuration];
+        //  i should work with facebook SDK
     });
     return managerInstance;
 }

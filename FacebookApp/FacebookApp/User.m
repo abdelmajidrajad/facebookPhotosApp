@@ -10,6 +10,7 @@
 
 @implementation User
 -(instancetype) initWithDictionary:(NSDictionary *) dictionary{
+    self = [super init];
     if (!self)
         return nil;
     self.user_id = [dictionary[@"id"] integerValue];

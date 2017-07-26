@@ -9,7 +9,7 @@
 #import "Data.h"
 
 @implementation Data
--(instancetype)initWithDictionary:(id)dictionary{
+-(instancetype)initWithDictionary:(NSDictionary *)dictionary{
     if(!self) return nil;
     self.is_silhouette = [dictionary[@"is_silhouette"] boolValue];
     self.url = dictionary[@"url"];

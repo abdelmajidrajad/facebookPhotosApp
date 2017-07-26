@@ -42,21 +42,11 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SelectedIcon" translatesAutoresizingMaskIntoConstraints="NO" id="e28-s4-DCd">
-                        <rect key="frame" x="8" y="8" width="20" height="20"/>
-                        <color key="tintColor" red="0.95327611453886074" green="0.9852509239862135" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="20" id="N0i-a0-tzT"/>
-                            <constraint firstAttribute="height" constant="20" id="a6Q-ql-o9w"/>
-                        </constraints>
-                    </imageView>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="7rr-K4-LVz" secondAttribute="trailing" constant="2" id="4tK-KF-NtM"/>
                 <constraint firstItem="7rr-K4-LVz" firstAttribute="top" secondItem="0oY-Fr-RXG" secondAttribute="bottom" id="5mQ-gm-hyf"/>
-                <constraint firstItem="e28-s4-DCd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Hwi-K7-LIM"/>
-                <constraint firstItem="e28-s4-DCd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="IYP-QH-AKg"/>
                 <constraint firstItem="Bo6-5L-eSe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="PSP-zw-zo8"/>
                 <constraint firstItem="Bo6-5L-eSe" firstAttribute="top" secondItem="7rr-K4-LVz" secondAttribute="bottom" id="Ykv-Ta-nvO"/>
                 <constraint firstItem="7rr-K4-LVz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="fY3-ad-PYE"/>
@@ -70,13 +60,11 @@
                 <outlet property="albumImageView" destination="0oY-Fr-RXG" id="Bp4-AE-xW9"/>
                 <outlet property="albumTitleLabel" destination="7rr-K4-LVz" id="xef-jY-Qr1"/>
                 <outlet property="photosCount" destination="Bo6-5L-eSe" id="UlJ-Dv-TdT"/>
-                <outlet property="selectedSignature" destination="e28-s4-DCd" id="XlD-58-jIO"/>
             </connections>
             <point key="canvasLocation" x="-62.5" y="-7"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="SelectedIcon" width="20" height="20"/>
         <image name="image" width="400" height="400"/>
     </resources>
 </document>

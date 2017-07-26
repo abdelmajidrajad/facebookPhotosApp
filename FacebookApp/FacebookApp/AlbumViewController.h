@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIAlbumViewDelegate.h"
+@class Album;
+@protocol UIAlbumViewControllerDelegate<NSObject>
+@required
+-(void) didTapAnAlbum:( Album * _Nullable ) album;
+@end
 @interface AlbumViewController : UIViewController
-@property (nonatomic, weak, nullable) id <UIAlbumViewDelegate> delegate;
+@property (nonatomic, nullable) id <UIAlbumViewControllerDelegate> delegate;
 @end

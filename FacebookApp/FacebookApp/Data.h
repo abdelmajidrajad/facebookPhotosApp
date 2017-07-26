@@ -11,5 +11,6 @@
 @interface Data : NSObject
 @property(nonatomic) BOOL is_silhouette;
 @property(nonatomic) NSString* url;
+@property(nonatomic) NSString* picture_url;
 -(instancetype) initWithDictionary:(NSDictionary *) dictionary;
 @end

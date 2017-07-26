@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface PhotosViewController : UIViewController
+-(instancetype) initWithPhotosArray:(NSArray *) photos;
 
 @end

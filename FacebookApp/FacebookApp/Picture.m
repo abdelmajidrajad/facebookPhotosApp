@@ -10,6 +10,7 @@
 
 @implementation Picture
 -(instancetype)initWithDictionary:(NSDictionary *)dictionary{
+    self = [super init];
     if (!self) return nil;
     self.data = [[Data alloc] initWithDictionary:dictionary[@"data"]];
     return self;

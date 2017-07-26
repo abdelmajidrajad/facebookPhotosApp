@@ -18,6 +18,7 @@
 		B25B109F1F28A92F00BF38DB /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B25B109D1F28A92F00BF38DB /* PhotoCollectionViewCell.m */; };
 		B25B10A01F28A92F00BF38DB /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25B109E1F28A92F00BF38DB /* PhotoCollectionViewCell.xib */; };
 		B25B10A31F28AC3600BF38DB /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = B25B10A21F28AC3600BF38DB /* Photo.m */; };
+		B25B10A51F28FB6500BF38DB /* Archi.png in Resources */ = {isa = PBXBuildFile; fileRef = B25B10A41F28FB6500BF38DB /* Archi.png */; };
 		B27D10A21F25E0B80032BFE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B27D10A11F25E0B80032BFE1 /* main.m */; };
 		B27D10A51F25E0B80032BFE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B27D10A41F25E0B80032BFE1 /* AppDelegate.m */; };
 		B27D10A81F25E0B80032BFE1 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27D10A71F25E0B80032BFE1 /* AuthViewController.m */; };
@@ -57,6 +58,7 @@
 		B25B109E1F28A92F00BF38DB /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		B25B10A11F28AC3600BF38DB /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
 		B25B10A21F28AC3600BF38DB /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		B25B10A41F28FB6500BF38DB /* Archi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Archi.png; path = ../../../Archi.png; sourceTree = "<group>"; };
 		B27D109D1F25E0B80032BFE1 /* FacebookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27D10A11F25E0B80032BFE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B27D10A31F25E0B80032BFE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		B27D109F1F25E0B80032BFE1 /* FacebookApp */ = {
 			isa = PBXGroup;
 			children = (
+				B25B10A41F28FB6500BF38DB /* Archi.png */,
 				B2C2FEDC1F266ABE00874A54 /* FacebookApp.entitlements */,
 				B2C2FEB21F260F6500874A54 /* Classes */,
 				B2C2FEB11F260F6000874A54 /* Resource */,
@@ -366,6 +369,7 @@
 				B27D10AD1F25E0B80032BFE1 /* Assets.xcassets in Resources */,
 				B25B10A01F28A92F00BF38DB /* PhotoCollectionViewCell.xib in Resources */,
 				B27D10AB1F25E0B80032BFE1 /* Main.storyboard in Resources */,
+				B25B10A51F28FB6500BF38DB /* Archi.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,13 +23,14 @@ static NSString * reuseIdentifier = @"albumCellIdentifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self fetshData];
+
     self.view.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1];
      [self setupConstraint];
     [self registerCell];
     _albumCollectionView.delegate = self;
     _albumCollectionView.dataSource = self;
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [self fetshData];
 }
 -(void) setupConstraint{
     [self.albumCollectionView makeConstraints:^(MASConstraintMaker *make) {
@@ -62,7 +63,7 @@ static NSString * reuseIdentifier = @"albumCellIdentifier";
     CGRect screenRect = self.view.bounds;
     CGFloat screenWidth = screenRect.size.width;
     float cellWidth = screenWidth / 2.0;
-    CGSize size = CGSizeMake(cellWidth, 220);
+    CGSize size = CGSizeMake(cellWidth, 200);
     return size;
 }
 
@@ -82,11 +83,14 @@ static NSString * reuseIdentifier = @"albumCellIdentifier";
 -(BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath{
     return YES;
 }
+//- (UIEdgeInsets)collectionView:(UICollectionView*)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+//    return UIEdgeInsetsMake(1, 1, 1, 1);
+//}
 #pragma private methods - setup collectionView
 - (UICollectionViewFlowLayout *)createLayoutFlow {
     UICollectionViewFlowLayout * layout = [[UICollectionViewFlowLayout alloc] init];
     layout.itemSize = CGSizeMake(self.view.frame.size.width/3, self.view.frame.size.width/3);
-    layout.minimumLineSpacing = 5.0f;
+    layout.minimumLineSpacing = 2.0f;
     layout.minimumInteritemSpacing = 0.0f;
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
     return layout;

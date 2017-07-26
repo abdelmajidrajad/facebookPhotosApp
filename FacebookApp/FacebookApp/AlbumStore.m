@@ -20,20 +20,22 @@
     _albums = [NSMutableArray new];
     return self;
 }
--(void) fetchAlbum:(void(^)(NSMutableArray *)) completion{
+-(void) fetchAlbum:(void(^)(NSArray *)) completion{
     FBSDKGraphRequest *request = [[FBSDKGraphRequest alloc]
                                   initWithGraphPath:@"me/albums"
                                   parameters:@{@"fields":@"description,picture{url},photo_count,name"}
                                   HTTPMethod:@"GET"];
     [request startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection,
-                                          NSDictionary *result,
+                                          id result,
                                           NSError *error) {
-        NSLog(@"%@",result[@"data"]);
-        for (NSDictionary *albumElement in result[@"data"]) {
+
+        for (id albumElement in result[@"data"]) {
             Album *album = [[Album alloc] initWithDictionary:albumElement];
             [_albums addObject:album];
         }
         completion(_albums);
- }];
+     }];
+
+
 }
 @end

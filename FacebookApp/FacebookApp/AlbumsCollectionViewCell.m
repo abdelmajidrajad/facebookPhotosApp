@@ -7,20 +7,26 @@
 //
 
 #import "AlbumsCollectionViewCell.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "LayoutHelper.h"
 @interface AlbumsCollectionViewCell()
 @end
 @implementation AlbumsCollectionViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    self.backgroundColor = [UIColor whiteColor];
+    [LayoutHelper addShadow:self];
     // Initialization code
 }
 -(void)prepareForReuse{
     self.selected = YES;
 }
 -(void)bindView:(Album *)album{
-    UIImage *image = [UIImage imageNamed:album.picture.data.url];
-    _albumImageView.image = image;
+
+
+    [_albumImageView sd_setImageWithURL:[NSURL URLWithString:album.picture.data.url]
+                                 placeholderImage:[UIImage imageNamed:@"image.png"]];
     _albumTitleLabel.text = album.name;
     NSString *photosCount =[NSString stringWithFormat:@"%ld",(long)album.photosCount];_photosCount.text = photosCount;
 }

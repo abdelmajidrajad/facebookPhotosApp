@@ -29,7 +29,5 @@
     [_photoImageView sd_setImageWithURL:[NSURL URLWithString:photo.picture_url]
                        placeholderImage:[UIImage imageNamed:@"image.png"]];
 }
--(void) selectedState{
 
-}
 @end

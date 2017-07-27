@@ -89,6 +89,8 @@
 -(UIImageView *)userImageView{
     if (!_userImageView) {
         _userImageView = [UIImageView new];
+        _userImageView.layer.cornerRadius = 22;
+        _userImageView.clipsToBounds = YES;
         [_container  addSubview:_userImageView];
     }
     return _userImageView;
@@ -97,7 +99,7 @@
     if (!_nameLabel) {
         _nameLabel = [UILabel new];
         _nameLabel.textAlignment = NSTextAlignmentCenter;
-        _nameLabel.font =[UIFont systemFontOfSize:13 weight:UIFontWeightThin];
+        _nameLabel.font =[UIFont systemFontOfSize:18 weight:UIFontWeightThin];
         [_container  addSubview:_nameLabel];
     }
     return _nameLabel;

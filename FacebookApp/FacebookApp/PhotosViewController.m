@@ -10,6 +10,7 @@
 #import <Masonry.h>
 #import "PhotoCollectionViewCell.h"
 #import "Album.h"
+#import "PhotoViewCollection.h"
 @interface PhotosViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property(nonatomic) NSArray *photos;
 @property(nonatomic) UICollectionView *photoCollectionView;
@@ -61,10 +62,11 @@ static NSString * reuseIdentifier = @"albumCellIdentifier";
 
 #pragma -mark delegate methods
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    PhotoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+  //  PhotoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     NSLog(@"Selected Cell");
-    [cell selectedState];
-
+    PhotoViewCollection *photoController = [[PhotoViewCollection alloc] initWithPictures:_photos];
+    //[self.navigationController pushViewController:photoController animated:YES];
+    [self.navigationController showDetailViewController:photoController sender:self];
 }
 -(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
     // deselection

@@ -34,6 +34,8 @@
 		B2C2FED31F2648B400874A54 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C2FED21F2648B300874A54 /* PhotosViewController.m */; };
 		B2C2FED61F2649D300874A54 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C2FED51F2649D300874A54 /* AlbumViewController.m */; };
 		B2C2FEDA1F2655A600874A54 /* AlbumStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C2FED91F2655A600874A54 /* AlbumStore.m */; };
+		B2C69D141F2A25F000E09DA5 /* UICarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C69D131F2A25F000E09DA5 /* UICarouselView.m */; };
+		B2C69D171F2A293200E09DA5 /* PhotoViewCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C69D161F2A293200E09DA5 /* PhotoViewCollection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,10 @@
 		B2C2FED81F2655A600874A54 /* AlbumStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumStore.h; sourceTree = "<group>"; };
 		B2C2FED91F2655A600874A54 /* AlbumStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumStore.m; sourceTree = "<group>"; };
 		B2C2FEDC1F266ABE00874A54 /* FacebookApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FacebookApp.entitlements; sourceTree = "<group>"; };
+		B2C69D121F2A25F000E09DA5 /* UICarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICarouselView.h; sourceTree = "<group>"; };
+		B2C69D131F2A25F000E09DA5 /* UICarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICarouselView.m; sourceTree = "<group>"; };
+		B2C69D151F2A293200E09DA5 /* PhotoViewCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewCollection.h; sourceTree = "<group>"; };
+		B2C69D161F2A293200E09DA5 /* PhotoViewCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewCollection.m; sourceTree = "<group>"; };
 		B438313AC64DFFAA30594DE9 /* libPods-FacebookApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FacebookApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -215,6 +221,8 @@
 		B2C2FEB41F260FB800874A54 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B2C69D121F2A25F000E09DA5 /* UICarouselView.h */,
+				B2C69D131F2A25F000E09DA5 /* UICarouselView.m */,
 				B2C2FEBA1F26148900874A54 /* Cell */,
 			);
 			name = View;
@@ -231,6 +239,8 @@
 				B2C2FED51F2649D300874A54 /* AlbumViewController.m */,
 				B220D7681F275A4C00DF9379 /* UserViewController.h */,
 				B220D7691F275A4C00DF9379 /* UserViewController.m */,
+				B2C69D151F2A293200E09DA5 /* PhotoViewCollection.h */,
+				B2C69D161F2A293200E09DA5 /* PhotoViewCollection.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -445,9 +455,11 @@
 				B25B109F1F28A92F00BF38DB /* PhotoCollectionViewCell.m in Sources */,
 				B2C2FED61F2649D300874A54 /* AlbumViewController.m in Sources */,
 				B220D7671F27580F00DF9379 /* Data.m in Sources */,
+				B2C69D141F2A25F000E09DA5 /* UICarouselView.m in Sources */,
 				B27D10A21F25E0B80032BFE1 /* main.m in Sources */,
 				B220D7711F2790D800DF9379 /* UserCoordinator.m in Sources */,
 				B220D7641F2757ED00DF9379 /* Picture.m in Sources */,
+				B2C69D171F2A293200E09DA5 /* PhotoViewCollection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

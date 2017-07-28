@@ -11,5 +11,4 @@
 @interface PhotoCollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
 -(void) bindView:(Photo *) photo;
--(void) selectedState;
 @end

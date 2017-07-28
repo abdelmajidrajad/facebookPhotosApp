@@ -116,7 +116,7 @@
 -(UIView *)container{
     if (!_container) {
         _container = [UIView new];
-        _container.backgroundColor = [UIColor tealBlueTint];
+        _container.backgroundColor = [UIColor whiteColor];
         [LayoutHelper addShadow:_container];
         [self.view addSubview:_container];
     }

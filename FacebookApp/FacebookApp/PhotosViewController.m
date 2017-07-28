@@ -10,7 +10,7 @@
 #import <Masonry.h>
 #import "PhotoCollectionViewCell.h"
 #import "Album.h"
-#import "PhotoViewCollection.h"
+#import "PhotoViewController.h"
 @interface PhotosViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property(nonatomic) NSArray *photos;
 @property(nonatomic) UICollectionView *photoCollectionView;
@@ -64,7 +64,7 @@ static NSString * reuseIdentifier = @"albumCellIdentifier";
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
   //  PhotoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     NSLog(@"Selected Cell");
-    PhotoViewCollection *photoController = [[PhotoViewCollection alloc] initWithPictures:_photos];
+    PhotoViewController *photoController = [[PhotoViewController alloc] initWithPictures:_photos];
     //[self.navigationController pushViewController:photoController animated:YES];
     [self.navigationController showDetailViewController:photoController sender:self];
 }

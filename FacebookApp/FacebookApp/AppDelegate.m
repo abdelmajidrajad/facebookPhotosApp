@@ -19,6 +19,8 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     UINavigationController *navigationController = [UINavigationController new];
+    navigationController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
+
     [self.window setRootViewController:navigationController];
 
     id<Coordinator> coordinator = [[AuthCoordinator alloc] initWithNavigationController:navigationController];

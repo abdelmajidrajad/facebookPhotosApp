@@ -22,6 +22,7 @@
 }
 -(void)start{
     UserViewController *userViewController =[UserViewController new];
+    userViewController.title = @"Informations";
     userViewController.delegate = self;
     [_navigationViewController pushViewController:userViewController animated:YES];
 }

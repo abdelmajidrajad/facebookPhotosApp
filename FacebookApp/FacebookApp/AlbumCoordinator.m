@@ -24,6 +24,7 @@
 }
 -(void)start{
     AlbumViewController *albumViewController = [AlbumViewController new];
+    albumViewController.title = @"Albums";
     albumViewController.delegate = self;
     [_navigationConroller pushViewController:albumViewController animated:YES];
 }
@@ -31,6 +32,7 @@
     AlbumStore *store = [AlbumStore new];
     [store fetchPhotos:album.album_id completion:^(Album * photos) {
         PhotosViewController *photoController = [[PhotosViewController alloc] initWithPhotosArray:photos.photos];
+        photoController.title = @"Photos";
         [_navigationConroller pushViewController:photoController animated:YES];
     }];
 }

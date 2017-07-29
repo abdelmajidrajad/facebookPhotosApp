@@ -25,6 +25,7 @@
 }
 -(void)start{
     AuthViewController *viewController = [AuthViewController new];
+    viewController.title = @"Authentification";
     viewController.delegate = self;
     [_navigationConroller pushViewController:viewController animated:YES];
 }

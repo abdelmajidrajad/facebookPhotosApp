@@ -7,25 +7,94 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D829E3D7EB791CBBCBE956E /* libPods-FacebookApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B438313AC64DFFAA30594DE9 /* libPods-FacebookApp.a */; };
+		B220D7611F27577200DF9379 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B220D7601F27577200DF9379 /* User.m */; };
+		B220D7641F2757ED00DF9379 /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = B220D7631F2757ED00DF9379 /* Picture.m */; };
+		B220D7671F27580F00DF9379 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = B220D7661F27580F00DF9379 /* Data.m */; };
+		B220D76A1F275A4C00DF9379 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B220D7691F275A4C00DF9379 /* UserViewController.m */; };
+		B220D76E1F2775B300DF9379 /* LayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B220D76D1F2775B300DF9379 /* LayoutHelper.m */; };
+		B220D7711F2790D800DF9379 /* UserCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = B220D7701F2790D800DF9379 /* UserCoordinator.m */; };
+		B220D7741F279FAE00DF9379 /* AlbumCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = B220D7731F279FAE00DF9379 /* AlbumCoordinator.m */; };
+		B24E89CC1F2B581F009CCBEB /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24E89CB1F2B581F009CCBEB /* PhotoViewController.m */; };
+		B24E89CF1F2B588B009CCBEB /* UICarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = B24E89CE1F2B588B009CCBEB /* UICarouselView.m */; };
+		B25B109F1F28A92F00BF38DB /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B25B109D1F28A92F00BF38DB /* PhotoCollectionViewCell.m */; };
+		B25B10A01F28A92F00BF38DB /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25B109E1F28A92F00BF38DB /* PhotoCollectionViewCell.xib */; };
+		B25B10A31F28AC3600BF38DB /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = B25B10A21F28AC3600BF38DB /* Photo.m */; };
+		B25B10A51F28FB6500BF38DB /* Archi.png in Resources */ = {isa = PBXBuildFile; fileRef = B25B10A41F28FB6500BF38DB /* Archi.png */; };
 		B27D10A21F25E0B80032BFE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B27D10A11F25E0B80032BFE1 /* main.m */; };
 		B27D10A51F25E0B80032BFE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B27D10A41F25E0B80032BFE1 /* AppDelegate.m */; };
-		B27D10A81F25E0B80032BFE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27D10A71F25E0B80032BFE1 /* ViewController.m */; };
+		B27D10A81F25E0B80032BFE1 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27D10A71F25E0B80032BFE1 /* AuthViewController.m */; };
 		B27D10AB1F25E0B80032BFE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27D10A91F25E0B80032BFE1 /* Main.storyboard */; };
 		B27D10AD1F25E0B80032BFE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27D10AC1F25E0B80032BFE1 /* Assets.xcassets */; };
 		B27D10B01F25E0B80032BFE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27D10AE1F25E0B80032BFE1 /* LaunchScreen.storyboard */; };
+		B2C2FEBE1F2614B600874A54 /* AlbumsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C2FEBC1F2614B600874A54 /* AlbumsCollectionViewCell.m */; };
+		B2C2FEBF1F2614B600874A54 /* AlbumsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C2FEBD1F2614B600874A54 /* AlbumsCollectionViewCell.xib */; };
+		B2C2FEC31F262CED00874A54 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C2FEC21F262CED00874A54 /* NetworkManager.m */; };
+		B2C2FEC71F26319000874A54 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C2FEC61F26319000874A54 /* Album.m */; };
+		B2C2FECB1F26378C00874A54 /* UIColor+GuideLine.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C2FECA1F26378C00874A54 /* UIColor+GuideLine.m */; };
+		B2C2FECF1F263F7500874A54 /* AuthCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C2FECE1F263F7500874A54 /* AuthCoordinator.m */; };
+		B2C2FED31F2648B400874A54 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C2FED21F2648B300874A54 /* PhotosViewController.m */; };
+		B2C2FED61F2649D300874A54 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C2FED51F2649D300874A54 /* AlbumViewController.m */; };
+		B2C2FEDA1F2655A600874A54 /* AlbumStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C2FED91F2655A600874A54 /* AlbumStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A8A86F1EB9D829C43928744 /* Pods-FacebookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FacebookApp/Pods-FacebookApp.release.xcconfig"; sourceTree = "<group>"; };
+		3E4FE81366BB0B755624ED88 /* Pods-FacebookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacebookApp/Pods-FacebookApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B220D75F1F27577200DF9379 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		B220D7601F27577200DF9379 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		B220D7621F2757ED00DF9379 /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
+		B220D7631F2757ED00DF9379 /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Picture.m; sourceTree = "<group>"; };
+		B220D7651F27580F00DF9379 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		B220D7661F27580F00DF9379 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
+		B220D7681F275A4C00DF9379 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		B220D7691F275A4C00DF9379 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		B220D76C1F2775B300DF9379 /* LayoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutHelper.h; sourceTree = "<group>"; };
+		B220D76D1F2775B300DF9379 /* LayoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutHelper.m; sourceTree = "<group>"; };
+		B220D76F1F2790D800DF9379 /* UserCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCoordinator.h; sourceTree = "<group>"; };
+		B220D7701F2790D800DF9379 /* UserCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCoordinator.m; sourceTree = "<group>"; };
+		B220D7721F279FAE00DF9379 /* AlbumCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCoordinator.h; sourceTree = "<group>"; };
+		B220D7731F279FAE00DF9379 /* AlbumCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCoordinator.m; sourceTree = "<group>"; };
+		B24E89CA1F2B581F009CCBEB /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		B24E89CB1F2B581F009CCBEB /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		B24E89CD1F2B588B009CCBEB /* UICarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICarouselView.h; sourceTree = "<group>"; };
+		B24E89CE1F2B588B009CCBEB /* UICarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICarouselView.m; sourceTree = "<group>"; };
+		B25B109C1F28A92F00BF38DB /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		B25B109D1F28A92F00BF38DB /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		B25B109E1F28A92F00BF38DB /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		B25B10A11F28AC3600BF38DB /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		B25B10A21F28AC3600BF38DB /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		B25B10A41F28FB6500BF38DB /* Archi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Archi.png; path = ../../../Archi.png; sourceTree = "<group>"; };
 		B27D109D1F25E0B80032BFE1 /* FacebookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27D10A11F25E0B80032BFE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B27D10A31F25E0B80032BFE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B27D10A41F25E0B80032BFE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B27D10A61F25E0B80032BFE1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B27D10A71F25E0B80032BFE1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B27D10A61F25E0B80032BFE1 /* AuthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthViewController.h; sourceTree = "<group>"; };
+		B27D10A71F25E0B80032BFE1 /* AuthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthViewController.m; sourceTree = "<group>"; };
 		B27D10AA1F25E0B80032BFE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B27D10AC1F25E0B80032BFE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B27D10AF1F25E0B80032BFE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B27D10B11F25E0B80032BFE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2C2FEBB1F2614B600874A54 /* AlbumsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumsCollectionViewCell.h; sourceTree = "<group>"; };
+		B2C2FEBC1F2614B600874A54 /* AlbumsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumsCollectionViewCell.m; sourceTree = "<group>"; };
+		B2C2FEBD1F2614B600874A54 /* AlbumsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumsCollectionViewCell.xib; sourceTree = "<group>"; };
+		B2C2FEC11F262CED00874A54 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		B2C2FEC21F262CED00874A54 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		B2C2FEC51F26319000874A54 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		B2C2FEC61F26319000874A54 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		B2C2FEC91F26378C00874A54 /* UIColor+GuideLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GuideLine.h"; sourceTree = "<group>"; };
+		B2C2FECA1F26378C00874A54 /* UIColor+GuideLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GuideLine.m"; sourceTree = "<group>"; };
+		B2C2FECD1F263F7500874A54 /* AuthCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthCoordinator.h; sourceTree = "<group>"; };
+		B2C2FECE1F263F7500874A54 /* AuthCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthCoordinator.m; sourceTree = "<group>"; };
+		B2C2FED01F263F8100874A54 /* Coordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
+		B2C2FED11F2648B300874A54 /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		B2C2FED21F2648B300874A54 /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		B2C2FED41F2649D300874A54 /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
+		B2C2FED51F2649D300874A54 /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
+		B2C2FED81F2655A600874A54 /* AlbumStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumStore.h; sourceTree = "<group>"; };
+		B2C2FED91F2655A600874A54 /* AlbumStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumStore.m; sourceTree = "<group>"; };
+		B2C2FEDC1F266ABE00874A54 /* FacebookApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FacebookApp.entitlements; sourceTree = "<group>"; };
+		B438313AC64DFFAA30594DE9 /* libPods-FacebookApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FacebookApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +102,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D829E3D7EB791CBBCBE956E /* libPods-FacebookApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17BEBDD25ECBFFDE72936699 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B438313AC64DFFAA30594DE9 /* libPods-FacebookApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54E7DAE85D7019B08A257168 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E4FE81366BB0B755624ED88 /* Pods-FacebookApp.debug.xcconfig */,
+				2A8A86F1EB9D829C43928744 /* Pods-FacebookApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B220D76B1F27759A00DF9379 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B220D76C1F2775B300DF9379 /* LayoutHelper.h */,
+				B220D76D1F2775B300DF9379 /* LayoutHelper.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		B27D10941F25E0B80032BFE1 = {
 			isa = PBXGroup;
 			children = (
 				B27D109F1F25E0B80032BFE1 /* FacebookApp */,
 				B27D109E1F25E0B80032BFE1 /* Products */,
+				54E7DAE85D7019B08A257168 /* Pods */,
+				17BEBDD25ECBFFDE72936699 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,12 +156,13 @@
 		B27D109F1F25E0B80032BFE1 /* FacebookApp */ = {
 			isa = PBXGroup;
 			children = (
+				B25B10A41F28FB6500BF38DB /* Archi.png */,
+				B2C2FEDC1F266ABE00874A54 /* FacebookApp.entitlements */,
+				B2C2FEB21F260F6500874A54 /* Classes */,
+				B2C2FEB11F260F6000874A54 /* Resource */,
 				B27D10A31F25E0B80032BFE1 /* AppDelegate.h */,
 				B27D10A41F25E0B80032BFE1 /* AppDelegate.m */,
-				B27D10A61F25E0B80032BFE1 /* ViewController.h */,
-				B27D10A71F25E0B80032BFE1 /* ViewController.m */,
 				B27D10A91F25E0B80032BFE1 /* Main.storyboard */,
-				B27D10AC1F25E0B80032BFE1 /* Assets.xcassets */,
 				B27D10AE1F25E0B80032BFE1 /* LaunchScreen.storyboard */,
 				B27D10B11F25E0B80032BFE1 /* Info.plist */,
 				B27D10A01F25E0B80032BFE1 /* Supporting Files */,
@@ -79,6 +178,135 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B2C2FEB11F260F6000874A54 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B27D10AC1F25E0B80032BFE1 /* Assets.xcassets */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		B2C2FEB21F260F6500874A54 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B220D76B1F27759A00DF9379 /* Helpers */,
+				B2C2FED71F26558D00874A54 /* Store */,
+				B2C2FECC1F263F4200874A54 /* Coordinator */,
+				B2C2FEC81F26374C00874A54 /* Extension */,
+				B2C2FEC01F262CC900874A54 /* Manager */,
+				B2C2FEB51F260FBE00874A54 /* Controller */,
+				B2C2FEB41F260FB800874A54 /* View */,
+				B2C2FEB31F260FAF00874A54 /* Model */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		B2C2FEB31F260FAF00874A54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2C2FEC51F26319000874A54 /* Album.h */,
+				B2C2FEC61F26319000874A54 /* Album.m */,
+				B220D75F1F27577200DF9379 /* User.h */,
+				B220D7601F27577200DF9379 /* User.m */,
+				B220D7621F2757ED00DF9379 /* Picture.h */,
+				B220D7631F2757ED00DF9379 /* Picture.m */,
+				B220D7651F27580F00DF9379 /* Data.h */,
+				B220D7661F27580F00DF9379 /* Data.m */,
+				B25B10A11F28AC3600BF38DB /* Photo.h */,
+				B25B10A21F28AC3600BF38DB /* Photo.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B2C2FEB41F260FB800874A54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B24E89CD1F2B588B009CCBEB /* UICarouselView.h */,
+				B24E89CE1F2B588B009CCBEB /* UICarouselView.m */,
+				B2C2FEBA1F26148900874A54 /* Cell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B2C2FEB51F260FBE00874A54 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B27D10A61F25E0B80032BFE1 /* AuthViewController.h */,
+				B27D10A71F25E0B80032BFE1 /* AuthViewController.m */,
+				B2C2FED11F2648B300874A54 /* PhotosViewController.h */,
+				B2C2FED21F2648B300874A54 /* PhotosViewController.m */,
+				B2C2FED41F2649D300874A54 /* AlbumViewController.h */,
+				B2C2FED51F2649D300874A54 /* AlbumViewController.m */,
+				B220D7681F275A4C00DF9379 /* UserViewController.h */,
+				B220D7691F275A4C00DF9379 /* UserViewController.m */,
+				B24E89CA1F2B581F009CCBEB /* PhotoViewController.h */,
+				B24E89CB1F2B581F009CCBEB /* PhotoViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B2C2FEBA1F26148900874A54 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B2C2FEBB1F2614B600874A54 /* AlbumsCollectionViewCell.h */,
+				B2C2FEBC1F2614B600874A54 /* AlbumsCollectionViewCell.m */,
+				B2C2FEBD1F2614B600874A54 /* AlbumsCollectionViewCell.xib */,
+				B25B109C1F28A92F00BF38DB /* PhotoCollectionViewCell.h */,
+				B25B109D1F28A92F00BF38DB /* PhotoCollectionViewCell.m */,
+				B25B109E1F28A92F00BF38DB /* PhotoCollectionViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		B2C2FEC01F262CC900874A54 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B2C2FEC41F262D4900874A54 /* Network */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		B2C2FEC41F262D4900874A54 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B2C2FEC21F262CED00874A54 /* NetworkManager.m */,
+				B2C2FEC11F262CED00874A54 /* NetworkManager.h */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		B2C2FEC81F26374C00874A54 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B2C2FEC91F26378C00874A54 /* UIColor+GuideLine.h */,
+				B2C2FECA1F26378C00874A54 /* UIColor+GuideLine.m */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		B2C2FECC1F263F4200874A54 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B2C2FECD1F263F7500874A54 /* AuthCoordinator.h */,
+				B2C2FECE1F263F7500874A54 /* AuthCoordinator.m */,
+				B2C2FED01F263F8100874A54 /* Coordinator.h */,
+				B220D76F1F2790D800DF9379 /* UserCoordinator.h */,
+				B220D7701F2790D800DF9379 /* UserCoordinator.m */,
+				B220D7721F279FAE00DF9379 /* AlbumCoordinator.h */,
+				B220D7731F279FAE00DF9379 /* AlbumCoordinator.m */,
+			);
+			name = Coordinator;
+			sourceTree = "<group>";
+		};
+		B2C2FED71F26558D00874A54 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				B2C2FED81F2655A600874A54 /* AlbumStore.h */,
+				B2C2FED91F2655A600874A54 /* AlbumStore.m */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +314,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B27D10B41F25E0B80032BFE1 /* Build configuration list for PBXNativeTarget "FacebookApp" */;
 			buildPhases = (
+				125FABF55C74E06B28E507C0 /* [CP] Check Pods Manifest.lock */,
 				B27D10991F25E0B80032BFE1 /* Sources */,
 				B27D109A1F25E0B80032BFE1 /* Frameworks */,
 				B27D109B1F25E0B80032BFE1 /* Resources */,
+				5D8CC8D78A3F7A862CA453FD /* [CP] Embed Pods Frameworks */,
+				B75714BD9B1883DDF8C12FEB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -112,6 +343,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = NFA6K259X7;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -138,22 +374,92 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C2FEBF1F2614B600874A54 /* AlbumsCollectionViewCell.xib in Resources */,
 				B27D10B01F25E0B80032BFE1 /* LaunchScreen.storyboard in Resources */,
 				B27D10AD1F25E0B80032BFE1 /* Assets.xcassets in Resources */,
+				B25B10A01F28A92F00BF38DB /* PhotoCollectionViewCell.xib in Resources */,
 				B27D10AB1F25E0B80032BFE1 /* Main.storyboard in Resources */,
+				B25B10A51F28FB6500BF38DB /* Archi.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		125FABF55C74E06B28E507C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5D8CC8D78A3F7A862CA453FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FacebookApp/Pods-FacebookApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B75714BD9B1883DDF8C12FEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FacebookApp/Pods-FacebookApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B27D10991F25E0B80032BFE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B27D10A81F25E0B80032BFE1 /* ViewController.m in Sources */,
+				B2C2FEBE1F2614B600874A54 /* AlbumsCollectionViewCell.m in Sources */,
+				B27D10A81F25E0B80032BFE1 /* AuthViewController.m in Sources */,
+				B24E89CF1F2B588B009CCBEB /* UICarouselView.m in Sources */,
+				B2C2FEDA1F2655A600874A54 /* AlbumStore.m in Sources */,
+				B2C2FED31F2648B400874A54 /* PhotosViewController.m in Sources */,
+				B2C2FECF1F263F7500874A54 /* AuthCoordinator.m in Sources */,
 				B27D10A51F25E0B80032BFE1 /* AppDelegate.m in Sources */,
+				B220D76A1F275A4C00DF9379 /* UserViewController.m in Sources */,
+				B220D76E1F2775B300DF9379 /* LayoutHelper.m in Sources */,
+				B25B10A31F28AC3600BF38DB /* Photo.m in Sources */,
+				B2C2FECB1F26378C00874A54 /* UIColor+GuideLine.m in Sources */,
+				B24E89CC1F2B581F009CCBEB /* PhotoViewController.m in Sources */,
+				B2C2FEC31F262CED00874A54 /* NetworkManager.m in Sources */,
+				B220D7741F279FAE00DF9379 /* AlbumCoordinator.m in Sources */,
+				B220D7611F27577200DF9379 /* User.m in Sources */,
+				B2C2FEC71F26319000874A54 /* Album.m in Sources */,
+				B25B109F1F28A92F00BF38DB /* PhotoCollectionViewCell.m in Sources */,
+				B2C2FED61F2649D300874A54 /* AlbumViewController.m in Sources */,
+				B220D7671F27580F00DF9379 /* Data.m in Sources */,
 				B27D10A21F25E0B80032BFE1 /* main.m in Sources */,
+				B220D7711F2790D800DF9379 /* UserCoordinator.m in Sources */,
+				B220D7641F2757ED00DF9379 /* Picture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +577,10 @@
 		};
 		B27D10B51F25E0B80032BFE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E4FE81366BB0B755624ED88 /* Pods-FacebookApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FacebookApp/FacebookApp.entitlements;
 				DEVELOPMENT_TEAM = NFA6K259X7;
 				INFOPLIST_FILE = FacebookApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -283,8 +591,10 @@
 		};
 		B27D10B61F25E0B80032BFE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A8A86F1EB9D829C43928744 /* Pods-FacebookApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FacebookApp/FacebookApp.entitlements;
 				DEVELOPMENT_TEAM = NFA6K259X7;
 				INFOPLIST_FILE = FacebookApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -312,6 +622,7 @@
 				B27D10B61F25E0B80032BFE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

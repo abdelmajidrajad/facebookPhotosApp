@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AlbumsCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="217" height="198"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="217" height="198"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="0oY-Fr-RXG" userLabel="AlbumCover">
+                        <rect key="frame" x="2" y="2" width="213" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="U6d-lo-85l"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rr-K4-LVz" userLabel="AlbumTitle">
+                        <rect key="frame" x="5" y="152" width="210" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Pxr-i1-GM9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bo6-5L-eSe" userLabel="photosCount">
+                        <rect key="frame" x="5" y="172" width="210" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="86M-cI-7fP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7rr-K4-LVz" secondAttribute="trailing" constant="2" id="4tK-KF-NtM"/>
+                <constraint firstItem="7rr-K4-LVz" firstAttribute="top" secondItem="0oY-Fr-RXG" secondAttribute="bottom" id="5mQ-gm-hyf"/>
+                <constraint firstItem="Bo6-5L-eSe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="PSP-zw-zo8"/>
+                <constraint firstItem="Bo6-5L-eSe" firstAttribute="top" secondItem="7rr-K4-LVz" secondAttribute="bottom" id="Ykv-Ta-nvO"/>
+                <constraint firstItem="7rr-K4-LVz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="fY3-ad-PYE"/>
+                <constraint firstAttribute="trailing" secondItem="0oY-Fr-RXG" secondAttribute="trailing" constant="2" id="hNM-hG-8I5"/>
+                <constraint firstItem="0oY-Fr-RXG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="kqV-8T-0xh"/>
+                <constraint firstAttribute="trailing" secondItem="Bo6-5L-eSe" secondAttribute="trailing" constant="2" id="oHv-XE-LN7"/>
+                <constraint firstItem="0oY-Fr-RXG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="wbo-D4-B55"/>
+            </constraints>
+            <size key="customSize" width="217" height="198"/>
+            <connections>
+                <outlet property="albumImageView" destination="0oY-Fr-RXG" id="Bp4-AE-xW9"/>
+                <outlet property="albumTitleLabel" destination="7rr-K4-LVz" id="xef-jY-Qr1"/>
+                <outlet property="photosCount" destination="Bo6-5L-eSe" id="UlJ-Dv-TdT"/>
+            </connections>
+            <point key="canvasLocation" x="-62.5" y="-7"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="image" width="400" height="400"/>
+    </resources>
+</document>
